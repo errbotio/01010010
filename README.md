@@ -9,15 +9,15 @@ our public errbot instance [on Gitter](https://gitter.im/errbotio/errbot).
 Scripts
 -------
 
-* *update_repository.sh*:
+* **update_repository.sh**:
       Update the repository (and its submodules) to the latest version on GitHub.
 
-* *update_submodules.sh*:
+* **update_submodules.sh**:
       Update the submodules included in this repository.
       The result may be published to GitHub automatically by specifying `--publish` as an argument.
 
-* *upgrade_bot.sh*:
+* **upgrade_bot.sh**:
       Upgrade (and restart) the bot after updating the code bundled with this repository.
 
 
-*Note: All scripts expect to be run from the repository root.*
+_**Note**: All scripts expect to be run from the repository root._
