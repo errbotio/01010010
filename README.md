@@ -10,6 +10,12 @@ People curious about our deployment process are most welcome to check it out,
 but it is of no interest otherwise.*
 
 
+Webhooks
+--------
+
+*01010010* can be reached via webhook at https://gitter.errbot.net/.
+
+
 Jenkins
 -------
 
@@ -32,6 +38,7 @@ members of the [errbotio core team](https://github.com/orgs/errbotio/teams/core)
   This will trigger an [update of submodules](https://jenkins.errbot.net/job/Update%2001010010%20submodules/)
   which will cascade down through the [update pipeline](https://jenkins.errbot.net/view/01010010%20update%20pipeline/).
 
+
 Scripts
 -------
 
@@ -47,3 +54,33 @@ Scripts
 
 
 _**Note**: All scripts expect to be run from the repository root._
+
+
+Server setup
+-------------
+
+*01010010* is installed into `/srv/errbot/` and runs under the user *errbot*.
+The bot process is managed by [supervisor](http://supervisord.org/) (program name = `errbot-gitter`).
+
+### Directory layout
+
+* `/srv/errbot/virtualenv`:
+  The Python virtualenv used to run the bot
+* `/srv/errbot/data`:
+  The bot data directory
+* `/srv/errbot/extra_backends`:
+  Extra backends ([err-backend-gitter](https://github.com/errbotio/err-backend-gitter)) go here.
+  (**Note:** This is a git submodule!)
+* `/srv/errbot/repository`:
+  This directory contains the [code for errbot](https://github.com/errbotio/errbot).
+  (**Note:** This is a git submodule!)
+
+### Important commands
+
+* `sudo supervisorctl status errbot-gitter`
+* `sudo supervisorctl stop errbot-gitter`
+* `sudo supervisorctl start errbot-gitter`
+* `sudo supervisorctl restart errbot-gitter`
+* `sudo supervisorctl tail errbot-gitter`
+* `sudo supervisorctl tail -f errbot-gitter`
+* `less /var/log/supervisor/errbot-gitter.log`
