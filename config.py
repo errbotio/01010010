@@ -104,7 +104,7 @@ BOT_ADMINS = ('gbin', 'zoni')
 # should include the # sign here. For XMPP rooms that are password
 # protected, you can specify another tuple here instead of a string,
 # using the format (RoomName, Password).
-CHATROOM_PRESENCE = ('errbotio/errbot/test',)
+CHATROOM_PRESENCE = ('errbotio', 'errbotio/errbot', 'errbotio/errbot/test',)
 
 # The FullName, or nickname, your bot should use. What you set here will
 # be the nickname that Err shows in chatrooms. Note that some XMPP
