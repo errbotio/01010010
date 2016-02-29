@@ -32,7 +32,7 @@ STORAGE = 'Shelf'
 
 # The location where all of Err's data should be stored. Make sure to set
 # this to a directory that is writable by the user running the bot.
-BOT_DATA_DIR = ROOT + 'data'
+BOT_DATA_DIR = os.path.join(ROOT, 'data')
 
 # Set this to a directory on your system where you want to load extra
 # plugins from, which is useful mostly if you want to develop a plugin
@@ -43,7 +43,7 @@ BOT_EXTRA_PLUGIN_DIR = None
 
 # If you use an external backend as a plugin,
 # this is where you tell err where to find it.
-BOT_EXTRA_BACKEND_DIR = ROOT + 'extra_backends'
+BOT_EXTRA_BACKEND_DIR = os.path.join(ROOT, 'extra_backends')
 
 # If you want only a subset of the core plugins that are bundled with errbot, you can specify them here.
 # CORE_PLUGINS = None # This is default, all core plugins.
