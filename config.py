@@ -19,7 +19,7 @@
 import logging
 import os
 
-ROOT = '/srv/errbot/'
+ROOT = os.path.dirname(os.path.realpath(__file__))
 
 ##########################################################################
 # Core Err configuration                                                 #
