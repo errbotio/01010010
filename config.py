@@ -190,7 +190,7 @@ BOT_PREFIX = '!'
 # A list of commands which should be responded to in private, even if
 # the command was given in a MUC. For example:
 # DIVERT_TO_PRIVATE = ('help', 'about', 'status')
-DIVERT_TO_PRIVATE = ()
+DIVERT_TO_PRIVATE = ('help',)
 
 # Chat relay
 # Can be used to relay one to one message from specific users to the bot
