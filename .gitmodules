@@ -1,7 +1,7 @@
 [submodule "extra_backends/err-backend-gitter"]
 	path = extra_backends/err-backend-gitter
 	url = https://github.com/errbotio/err-backend-gitter.git
-	branch = errbot-4.0
+	branch = master
 [submodule "repository"]
 	path = repository
 	url = https://github.com/errbotio/errbot.git
