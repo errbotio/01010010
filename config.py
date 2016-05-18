@@ -58,7 +58,7 @@ BOT_EXTRA_BACKEND_DIR = os.path.join(ROOT, 'extra_backends')
 # If no virtualenv is detected, the equivalent of `pip install --user -r
 # requirements.txt` is used to ensure the package(s) is/are only installed for
 # the user running Err.
-#AUTOINSTALL_DEPS = True
+AUTOINSTALL_DEPS = True
 
 # The location of the log file. If you set this to None, then logging will
 # happen to console only.
