@@ -100,6 +100,8 @@ BOT_IDENTITY = {
 # would be considered an admin if setting '*@localhost'.
 BOT_ADMINS = ('gbin', 'zoni')
 
+BOT_ADMINS_NOTIFICATIONS = ('zoni',)
+
 # Chatrooms your bot should join on startup. For the IRC backend you
 # should include the # sign here. For XMPP rooms that are password
 # protected, you can specify another tuple here instead of a string,
